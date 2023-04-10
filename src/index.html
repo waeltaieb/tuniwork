@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
- <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body class="bg-white">
   <nav class="p-5 bg-gradient-to-r from-cyan-500 to-blue-500 shadow md:flex md:items-center md:justify-between">
     <div class="flex justify-between items-center ">
-      <span class="text-2xl font-[Poppins] cursor-pointer">
+      <span class=" cursor-pointer">
         <a href="index.html">
           <img class="h-14 ml-24 inline"
           src="img/tunlogo.png">
@@ -24,7 +24,7 @@
       </span>
     </div>
 
-    <ul class=" lg:bg-none md:flex md:items-center z-[-1000] md:z-auto md:static absolute  bg-gradient-to-r from-cyan-500 to-blue-500  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 justify-items-end md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+    <ul class=" lg:bg-none md:flex md:items-center z-[1] md:z-auto md:static absolute  bg-gradient-to-r from-cyan-500 to-blue-500  w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 justify-items-end md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
 
       <li class="mx-4 my-6 md:my-0">
         <a href="#" class="text-l text-white hover:text-cyan-500 duration-500">FREELANCE</a>
@@ -41,20 +41,98 @@
       <li class="mx-4 my-6 md:my-0">
         <a href="#" class="text-l text-white hover:text-cyan-500 duration-500">CONNEXION</a>
       </li>
-      <button class="bg-blue-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+      <a  href="inscription.html"class="bg-blue-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
         INSCRIPTION
-      </button>
+      </a>
 <h2 class=""></h2>
     </ul>
   </nav>
-<section  class=" h-128 bg-cover bg-center shadow" style="background-image: url(img/circle-scatter-haikei.svg)">
-  <div class="grid grid-cols-2 gap-4">
-    <div class="..."></div>
-    <div class="..."><img src="img/home-img.png" alt="tuniwork" ></div>
+<section  class=" h-128 max-md:h-auto w-full bg-cover bg-center shadow" style="background-image: url(img/circle-scatter-haikei.svg)">
+  <div class=" h-auto grid md:grid-cols-2 gap-0">
+    <div class="  w-full md:h-4">
+      <h1 class=" ml-10  mt-36 text-7xl text-white ">
+        Trouvez votre freelance 
+      </h1>
+      <h2 class=" ml-10  text-5xl text-orange-500 ">
+        Seulement une simple clique!
+      </h2>
+      <form>
+      <div class="shadow-2xl h-auto w-3/4 ml-10 bg-slate-50 rounded-lg mt-12 grid md:grid-cols-2 gap-0">
+        
+          <div class=" w-full md:h-4">
+            <label class="relative block w-full">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <img class="h-5 w-5" src="img/search-outline.svg" alt="Search" >
+              </span>
+              <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Développeur PHP, java, C#..." type="text" name="search"/>
+            </label>
+          </div>
+          <div class="  w-full ">
+            <button class="py-2 px-4 w-full bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+              chercher
+            </button>
+          </div>      
+      </div>
+    </form>
+    <div  class=" mt-4 w-3/4 ml-10 h-auto grid md:grid-cols-2 gap-1">
+      <div  class=" w-full md:h-4">
+        <button class="py-2 px-4 w-full bg-blue-100 border-indigo-500/100 text-black font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+          Je cherche freelance
+        </button>
+      </div>
+      <div class="w-full" >
+        <button class="py-2 px-4 w-full bg-blue-100 ring-blue-400 text-black font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+          Je cherche une mission 
+        </button>
+      </div>
+    </div>
+    </div>
+    <div class="w-full h-auto"><img class=" w-3/4  mt-32 mb-7"src="img/img-home.png" alt="tuniwork" ></div>
 
   </div>
 
 </section>
+
+
+
+<footer>
+  <div class="w-full bg-gradient-to-r from-cyan-500 to-blue-500  text-white">
+    <div class="xl:px-40 pb-12 lg:px-20 md:px-10 sm:px-5 px-10">
+      <div class="w-full pt-12 flex flex-col sm:flex-row space-y-2 justify-start">
+        <div class=" pr-10">
+          <img src="img/tunlogo.png"  width="197" height="70"alt="" srcset="">
+        </div>
+        <div class="w-full sm:w-2/5 pr-6 pl-6  flex flex-col space-y-4">
+         
+          <h6 class="font-bold">A propos de</br>
+          plateforme TUNIWORK</h6>
+          <p class=" hover:text-orange-600"> <a href="http://">Qui sommes-nous ?</a></p>
+          <p class=" hover:text-orange-600"> <a href="http://">Contact</a></p>
+        </div>
+        <div class="w-full mt-7 sm:w-1/5 flex flex-col space-y-4">
+          <h6 class="font-bold">Freelances</h6>
+          <p class=" hover:text-orange-600"> <a href="http://"> Pourquoi s'inscrire ?</a></p>
+          <p class=" hover:text-orange-600"> <a href="http://">Journal</a></p>
+
+        </div>
+
+        <div class="w-full sm:w-1/5 pt-6 flex items-end mb-1">
+          <div class="flex flex-row space-x-4">
+            <a href="http://"><ion-icon class="w-9 h-9" name="logo-linkedin"></ion-icon></a>
+           <a href="http://"><ion-icon  class="w-9 h-9" name="logo-twitter"></ion-icon></a>
+            
+          </div>
+        </div>
+      </div>
+      <div class=" pt-2">
+        <p>© 2023 TuniWork.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
 
   <script>
     function Menu(e){
@@ -62,5 +140,6 @@
       e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
     }
   </script>
+  
 </body>
 </html>
